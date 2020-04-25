@@ -65,7 +65,7 @@ export default class List extends React.Component {
       <div class="rounded border border-info" id="homeobject">
         <h4 class="text-light bg-dark">&nbsp;これまでのおねつ</h4>
         <br />
-        <input class="btn btn-lg btn btn-pale btn-block" type="button" value="リストを更新する" onClick={this.reloadTickets.bind(this, token, username)} />
+        <table><tbody><td></td><td><input class="btn btn-lg btn btn-pale btn-block" type="button" value="リストを更新する" onClick={this.reloadTickets.bind(this, token, username)} /></td><td>-</td></tbody></table>
         <br />
         <ListTable items={this.state.items} total={this.state.total} tickets={this.state.tickets} username={username}/>
       </div>
