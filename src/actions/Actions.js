@@ -43,9 +43,15 @@ export function reloadTickets(token, username) {
               filterresults.sort(compare);
               //console.log(filterresults);
               //console.log(Object.keys(filterresults).length);
+              if(filterresults.length === 0){
+              dispatcher.dispatch({type: "GET_TICKETS",
+                tickets : [{Created: "None", title: "None", Comment: "None", TaskID: "None"}]
+              });                
+              }else{
               dispatcher.dispatch({type: "GET_TICKETS",
                 tickets : filterresults
               });
+            }
               }
     })
 }
