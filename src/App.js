@@ -7,11 +7,12 @@ const App = () => (
   <BrowserRouter>
     <div>
         <ul class="sidebarMenuInner">
-          <li class="nav-item"><Link to='/'>ほーむ</Link></li>
+          <li class="nav-item"><Link to='/home'>ほーむ</Link></li>
           <li class="nav-item"><Link to='/list'>いちらん</Link></li>
         </ul>
       <hr />
-      <Route exact path='/' component={Home} />
+      <Route exact path='/home' component={Home} />
+      <Route exact path='/index.html' component={Home} />
       <Route path='/list' component={List} />
     </div>
   </BrowserRouter>
