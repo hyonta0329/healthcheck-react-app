@@ -56,7 +56,7 @@ export default class HomeGraph extends React.Component {
           adjusteddatatickets.push({x: datetime, y: temp});
         }
     const graphdata = {
-      labels: ['2020-01', '2020-02', '2020-03', '2020-04', '2020-05'],
+      labels: ['2020-08', '2020-09', '2020-10', '2020-11', '2020-12'],
       datasets: [
         {
           label: 'おねつ',
